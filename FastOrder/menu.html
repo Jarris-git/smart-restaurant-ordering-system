@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a href="index.html" class="btn btn-warning">Retour</a>
+        <h3 class="text-warning">FASTORDER</h3>
+        <a href="cart.html" class="text-warning fs-3"><i class="bi bi-cart4"></i></a>
+      </div>
+    </nav>
+    <h3 class="text-center text-warning fw-bold non mb-3 menu">Menu</h3>
+    <div class="container d-flex justify-content-center">
+      <div class="d-flex gap-3 flex-wrap g-3">
+        <div>
+          <button class="btn btn-warning category-btn" onclick="showFast()">
+            <i class="bi bi-basket-fill"></i>  
+            Fast foot
+          </button>
+        </div>
+        <div>
+          <button class="btn btn-warning category-btn" onclick="showPizza()">
+            <i class="bi bi-pie-chart-fill"></i>  
+            Pizza
+          </button>
+        </div>
+        <div>
+          <button class="btn btn-warning category-btn" onclick="showGrillades()">
+            <i class="bi bi-fire"></i>  
+            Grillades
+          </button>
+        </div>
+        <div>
+          <button class="btn btn-warning category-btn" onclick="showPates()">
+            <i class="bi bi-egg-fried"></i> 
+            Pates
+          </button>
+        </div>
+        <div>
+          <button class="btn btn-warning category-btn" onclick="showBoissons()">
+            <i class="bi bi-cup-straw"></i>  
+            Boissons
+          </button>
+        </div>
+        <div>
+          <button class="btn btn-warning category-btn" onclick="showDesserts()">
+            <i class="bi bi-cake2"></i>  
+            Desserts
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MENUS -->
+    <!-- BURGER -->
+     <div class="container">
+      <h2 class="menu-item burger container non">Nos Burgers</h2>
+      <div class="row g-4">
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item burger">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" class="menu-img">
+            <div class="card-body">
+                  <h5 class="card-title">Burger Classic</h5>
+                  <p class="card-text">Steak, cheddar et sauce burger.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">3500 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="PBurger Classic" data-price="3500 "> Ajouter </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item burger">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" class="menu-img">
+            <div class="card-body">
+                  <h5 class="card-title">Double Cheeseburger</h5>
+                  <p class="card-text">Double viande et fromage fondant.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">4500 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Double Cheeseburger" data-price="4500 "> Ajouter </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item burger">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2025/08/Chicago-Style-Hot-Dog_EXPS_TOHD25_280659_SarahTramonte_4.jpg?fit=750%2C750" class="menu-img">
+            <div class="card-body">
+                  <h5 class="card-title">Hot Dog</h5>
+                  <p class="card-text">Pain moelleux et saucisse grillée.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">2500 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Hot Dog" data-price="2500 "> Ajouter </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item burger">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoLps9dZhLT87RhJZmQdQHly3uRuLt_su95SziDHpsTdQbpLGy4Z0OSBde8A&s" class="menu-img">
+            <div class="card-body">
+                  <h5 class="card-title">Tacos Poulet</h5>
+                  <p class="card-text">Poulet croustillant et sauce fromagère.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">4000 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Tacos Poulet" data-price="4000 "> Ajouter </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item burger">
+            <img src="https://images.unsplash.com/photo-1576107232684-1279f390859f" class="menu-img">
+            <div class="card-body">
+                  <h5 class="card-title">Frites Deluxe</h5>
+                  <p class="card-text">Frites croustillantes et sauce maison.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">1800 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Frites Deluxe" data-price="1800 "> Ajouter </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item burger">
+            <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086" class="menu-img">
+            <div class="card-body">
+                  <h5 class="card-title">Nuggets Chicken</h5>
+                  <p class="card-text">Nuggets de poulet croustillants.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">3000 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Nuggets Chicken" data-price="3000 "> Ajouter </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PIZZA -->
+    <div class="container">
+      <h2 class="non menu-item pizza container">Nos Pizzas</h2>
+      <div class="row g-4">
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item pizza">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" class="menu-img">
+                <div class="card-body">
+                  <h5 class="card-title">Pizza Royale</h5>
+                  <p class="card-text">Sauce tomate, mozzarelle, jambon et olives noires. </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">5000 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Pizza Royale" data-price="5000 "> Ajouter </button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item pizza">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" class="menu-img">
+                <div class="card-body">
+                  <h5 class="card-title">Pizza 4Fromages</h5>
+                  <p class="card-text">mozzarelle, cheddar, parmesan et gorgonzole.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">6000 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Pizza 4Fromages" data-price="6000 "> Ajouter </button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item pizza">
+            <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee" class="menu-img">
+                <div class="card-body">
+                  <h5 class="card-title">Pizza Pepperoni</h5>
+                  <p class="card-text">Pepperoni epice avec fromage fondant.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">5500 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Pizza Pepperoni" data-price="5500 "> Ajouter </button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item pizza">
+            <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65" class="menu-img">
+                <div class="card-body">
+                  <h5 class="card-title">Pizza Vegetarienne</h5>
+                  <p class="card-text">Poivrons, champignons, tomates et oignons.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">4800 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Pizza Vegetarienne" data-price="4800 "> Ajouter </button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item pizza">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe8Q-2zmI1IsXF333iyzpoP17143ilkIC4kc-mkW_h8LT9jwgoq5Pv-e1FIhc&s" class="menu-img">
+                <div class="card-body">
+                  <h5 class="card-title">Pizza BBQ Chicken</h5>
+                  <p class="card-text">Poulet grille avec sauce barbecue fumee.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">6500 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Pizza BBQ Chicken" data-price="6500 "> Ajouter </button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item pizza">
+            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002" class="menu-img">
+                <div class="card-body">
+                  <h5 class="card-title">Pizza Fruitd de Mer</h5>
+                  <p class="card-text">Crevettes, calamars et fromage fondant</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">7000 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Pizza Fruitd de Mer" data-price="7000 "> Ajouter </button>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GRILLADES -->
+    <div class="container">
+      <h2 class="non menu-item grillades container">Nos Grillades</h2>
+      <div class="row g-4">
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item grillades">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947" class="menu-img">
+                <div class="card-body">
+                  <h5 class="card-title">Travers de Porcs BBQ</h5>
+                  <p class="card-text">Travers caramélisés sauce barbecue.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">7500 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Travers de Porcs BBQ" data-price="7500 "> Ajouter </button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item grillades">
+            <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd" class="menu-img">
+                <div class="card-body">
+                  <h5 class="card-title">Saucisses Grillées</h5>
+                  <p class="card-text">Saucisses épicées servies chaudes.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">3500 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="PSaucisses Grillées" data-price="3500 "> Ajouter </button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item grillades">
+            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae" class="menu-img">
+                <div class="card-body">
+                  <h5 class="card-title">Poissin Grillé</h5>
+                  <p class="card-text">Poisson frais accompagné de plantains.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">6000 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Poissin Grillé" data-price="6000 "> Ajouter </button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item grillades">
+            <img src="https://images.unsplash.com/photo-1558030006-450675393462" class="menu-img">
+                <div class="card-body">
+                  <h5 class="card-title">Brochettes Mixtes</h5>
+                  <p class="card-text">Bœuf, poulet et poivrons grillés.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">5000 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="PBrochettes Mixtes" data-price="5000 "> Ajouter </button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item grillades">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947" class="menu-img">
+                <div class="card-body">
+                  <h5 class="card-title">Cote de Boeuf Grillé</h5>
+                  <p class="card-text">Viande tendre accompagnée de légumes grillés.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">8500 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Cote de Boeuf Grillé" data-price="8500 "> Ajouter </button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item grillades">
+            <img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2" class="menu-img">
+                <div class="card-body">
+                  <h5 class="card-title">Poulet Braisé</h5>
+                  <p class="card-text">Poulet mariné et grillé au feu de bois.</p>
+                  <div class="d-flex justify-content-between align-items-centerd-flex">
+                    <h5 class="mt-2 price">4500 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Poulet Braisé" data-price="4500 "> Ajouter </button>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PATES -->
+    <div class="container">
+      <h2 class="non menu-item pates container">Nos Pates</h2>
+      <div class="row g-4">
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item pates">
+            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9" class="menu-img">
+                <div class="card-body">
+                  <h5 class="card-title">Spaghetti Bolognaise</h5>
+                  <p class="card-text">Sauce tomate maison et viande hachée.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">4000 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="paghetti Bolognaise" data-price="4000 "> Ajouter </button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item pates">
+            <img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb" class="menu-img">
+                <div class="card-body">
+                  <h5 class="card-title">Tagliatelles Alfredo</h5>
+                  <p class="card-text">Crème fraîche et parmesan fondant.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">4500 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Tagliatelles Alfredo" data-price="4500 "> Ajouter </button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item pates">
+            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601" class="menu-img">
+                <div class="card-body">
+                  <h5 class="card-title">Penne Arrabiata</h5>
+                  <p class="card-text">Sauce tomate pimentée italienne.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">4200 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Penne Arrabiata" data-price="4200 "> Ajouter </button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item pates">
+            <img src="https://images.unsplash.com/photo-1619895092538-128341789043" class="menu-img">
+                <div class="card-body">
+                  <h5 class="card-title">Lasagnes Maison</h5>
+                  <p class="card-text">Lasagnes gratinées au fromage.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">5500 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Lasagnes Maison" data-price="5500 "> Ajouter </button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item pates">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgx2hOlQpKz_Cd2Y-Xq3icWCfhWerfGZVo29hQlPBnToX7rrDF_uPUysnBm5Q&s" class="menu-img">
+                <div class="card-body">
+                  <h5 class="card-title">Pâtes Carbonara</h5>
+                  <p class="card-text">Lardons fumés et sauce crémeuse.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">5000 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Pâtes Carbonara" data-price="5000 "> Ajouter </button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item pates">
+            <img src="https://images.unsplash.com/photo-1546549032-9571cd6b27df" class="menu-img">
+                <div class="card-body">
+                  <h5 class="card-title">Raviolis Sauce Blanche</h5>
+                  <p class="card-text">Raviolis farcis avec sauce onctueuse.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">4800 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="aviolis Sauce Blanche" data-price="4800 "> Ajouter </button>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOISSON -->
+    <div class="container">
+      <h2 class="non menu-item boisson container">Nos Boissons</h2>
+      <div class="row g-4">
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item boisson">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e" class="menu-img">
+            <div class="card-body">
+                  <h5 class="card-title">Cocktail Tropical</h5>
+                  <p class="card-text">Cocktail frais aux fruits exotiques.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">2500 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="PCocktail Tropical" data-price="2500 "> Ajouter </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item boisson">
+            <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba" class="menu-img">
+            <div class="card-body">
+                  <h5 class="card-title">Jus d’Orange Naturel</h5>
+                  <p class="card-text">Jus pressé 100% naturel.</p>
+                  <div class="d-flex justify-content-between align-items-centerd-flex">
+                    <h5 class="mt- price">1500 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="us d’Orange Naturel" data-price="1500 "> Ajouter </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item boisson">
+            <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc" class="menu-img">
+            <div class="card-body">
+                  <h5 class="card-title">Smoothie Fraise</h5>
+                  <p class="card-text">Boisson fraîche et fruitée.</p>
+                  <div class="d-flex justify-content-between align-items-centerd-flex">
+                    <h5 class="mt-2 price">3000 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Smoothie Fraise" data-price="3000 "> Ajouter </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item boisson">
+            <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97" class="menu-img">
+            <div class="card-body">
+                  <h5 class="card-title">Coca-Cola</h5>
+                  <p class="card-text">Boisson gazeuse rafraîchissante.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">1000 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Coca-Cola" data-price="1000 "> Ajouter </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item boisson">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" class="menu-img">
+            <div class="card-body">
+                  <h5 class="card-title">Café Expresso</h5>
+                  <p class="card-text">Café intense et aromatique.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">1200 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Café Expresso" data-price="1200 "> Ajouter </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item boisson">
+            <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc" class="menu-img">
+            <div class="card-body">
+                  <h5 class="card-title">Milkshake Vanille</h5>
+                  <p class="card-text">Milkshake crémeux à la vanille.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">2800 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Milkshake Vanille" data-price="2800 "> Ajouter </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DESSERT -->
+    <div class="container">
+      <h2 class="non menu-item dessert container">Nos Desserts</h2>
+      <div class="row g-4">
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item dessert">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c" class="menu-img">
+            <div class="card-body">
+                  <h5 class="card-title">Fondant Chocolat</h5>
+                  <p class="card-text">Cœur chocolat fondant chaud.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">3000 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Fondant Chocolat" data-price="3000 "> Ajouter </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item dessert">
+            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad" class="menu-img">
+            <div class="card-body">
+                  <h5 class="card-title">Cheesecake</h5>
+                  <p class="card-text">Cheesecake crémeux aux fruits rouges.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">3500 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Cheesecake" data-price="3500 "> Ajouter </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item dessert">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb" class="menu-img">
+            <div class="card-body">
+                  <h5 class="card-title">Crème Glacée</h5>
+                  <p class="card-text">Boules glacées parfum vanille et chocolat.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">2000 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Crème Glacée" data-price="2000 "> Ajouter </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item dessert">
+            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9" class="menu-img">
+            <div class="card-body">
+                  <h5 class="card-title">Tiramisu</h5>
+                  <p class="card-text">Dessert italien au café et mascarpone.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">3200 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="PTiramisu" data-price="3200 "> Ajouter </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item dessert">
+            <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93" class="menu-img">
+            <div class="card-body">
+                  <h5 class="card-title">Pancakes Sucrés</h5>
+                  <p class="card-text">Pancakes avec sirop et fruits.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">2800 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Pancakes Sucrés" data-price="2800 "> Ajouter </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2">
+          <div class="menu-card menu-item dessert">
+            <img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d05" class="menu-img">
+            <div class="card-body">
+                  <h5 class="card-title">Gâteau Fraise</h5>
+                  <p class="card-text">Gâteau moelleux à la fraise.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2 price">4000 FCFA</h5>
+                    <button class="btn btn-warning add-to-cart" data-name="Gâteau Fraise" data-price="4000 "> Ajouter </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bouton panier -->
+    <div class="cart-floating" id="cartBtn">
+      <i class="bi bi-cart3"></i>
+      <span id="cart-count">0</span>
+    </div>
+
+    <!-- Sidebar panier -->
+    <div class="cart-sidebar" id="cartSidebar">
+      <div class="cart-header">
+        <h4>Mon Panier</h4>
+        <button id="closeCart">&times;</button>
+      </div>
+      <div id="cart-items">
+        <p>Votre panier est vide</p>
+      </div>
+      <div class="cart-footer">
+        <h5>Total : <span id="cart-total">0 FCFA</span></h5>
+        <button class="btn btn-danger w-100">
+          Commander
+        </button>
+      </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
